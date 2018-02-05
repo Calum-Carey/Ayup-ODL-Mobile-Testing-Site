@@ -1,0 +1,147 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  color: $cinnarbar;
+  font-family: $font-tertiary;
+  padding: 10px 0;
+}
+
+.table__th, .table__search {
+    font-family: $font_secondary;
+    color: $pear-lusta;
+    background-color: $cinnarbar;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 0;
+    border: none;
+
+    &:first-child {
+      padding-left: 100px;
+      background-color: $cinnarbar;
+    }
+
+}
+
+td {
+
+  &:first-child {
+    padding-left: 100px;
+  }
+
+}
+
+.row {
+
+  &:nth-child(2n) {
+    background-color: $pear-lusta-half;
+  }
+
+}
+
+
+
+.table__expand {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  padding: 100px 200px;
+
+  &--content,
+  &--media {
+    box-sizing: border-box;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    }
+
+  &--media {
+    float: right;
+  }
+
+  &--list1 {
+    font-family: $font_secondary;
+    font-size: 34px;
+    padding: 20px 0;
+
+    &::before {
+      content: url("/assets/media/logos/Apple_Icon.svg");
+      padding-right: 20px;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+
+  &--list2, &--list3, &--list4 {
+    font-family: $font_primary;
+    font-size: 22px;
+    padding: 10px 0;
+  }
+
+    &--list2::before {
+        content: url("/assets/media/logos/OS_logo.svg");
+        padding-right: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    &--list3::before {
+        content: url('/assets/media/logos/safari_logo.svg');
+        padding-right: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    &--list4::before {
+        content: url('/assets/media/logos/resolution.svg');
+        padding-right: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+  &--list5 {
+      font-family: $font_primary;
+      font-size: 20px;
+      color: $cinnarbar;
+      padding: 10px 0;
+
+    &::before {
+        content: url('/assets/media/logos/ayup_icon.svg');
+        padding-right: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+  }
+
+}
+
+form {
+  input {
+    font-family: $font_secondary;
+    color: $cinnarbar;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+    margin: 0px;
+    border-style: none;
+
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $cinnarbar;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $cinnarbar;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $cinnarbar;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $cinnarbar;
+}

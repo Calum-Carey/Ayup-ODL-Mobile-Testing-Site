@@ -1,0 +1,105 @@
+.section {
+  clear: both;
+  max-width: $max-width;
+}
+
+  .wrapper {
+
+    display: table;
+    width: 100%;
+    background-color: $pear-lusta;
+
+    &--secondary {
+      background-color: $white;
+    }
+
+    &--tertiary {
+      background-color: $cinnarbar;
+    }
+
+    &__content {
+      width: 60%;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 100px 100px 100px 200px;
+
+      &--secondary {
+        background: $shadow-green;
+      }
+
+    }
+
+    &__media {
+      width: 40%;
+      display: table-cell;
+      vertical-align: middle;
+
+      &--img-left {
+        vertical-align: middle;
+        padding-left: 150px;
+      }
+
+      &--img-right {
+        vertical-align: middle;
+        padding-right: 100px;
+      }
+
+      &--grey-square, &--red-square {
+        display: block;
+        vertical-align: baseline; //Not Working
+      }
+
+
+
+      &--40 {
+        padding: 100px 100px 100px 0px;
+      }
+
+  }
+
+    &--reverse {
+
+      direction: rtl;
+
+      .wrapper__media {
+        direction: ltr;
+      }
+
+      .wrapper__content {
+        direction: ltr;
+      }
+    }
+
+  }
+
+
+
+
+.wrapper__content--header1::before {
+  content: url('/assets/media/shapes/rectangle-bullet.svg');
+}
+
+.wrapper__content--header2::before {
+  content: url('/assets/media/shapes/diagonal-bullet.svg');
+}
+
+.wrapper__content--header3::before {
+  content: url('/assets/media/shapes/circle-bullet.svg');
+}
+
+.wrapper__content--header4::before {
+  content: url('/assets/media/shapes/half-circle-bullet.svg');
+}
+
+.wrapper__content--header5::before {
+  content: url('/assets/media/shapes/double-square-bullet.svg');
+}
+
+.wrapper__content--header6::before {
+  content: url('/assets/media/shapes/handbook/bullet--doughnut-circle.svg');
+}
+
+.ayup-map {
+  display: block;
+  vertical-align: middle;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Burger nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Burger-nav">
+            <rect id="Rectangle" fill="#99C9AF" x="0" y="0" width="50" height="50"></rect>
+            <polygon id="Fill-44" fill="#263332" transform="translate(25.000000, 15.878378) rotate(90.000000) translate(-25.000000, -15.878378) " points="22.972973 28.3783784 27.027027 28.3783784 27.027027 3.37837838 22.972973 3.37837838"></polygon>
+            <polygon id="Fill-44-Copy" fill="#263332" transform="translate(25.000000, 25.337838) rotate(90.000000) translate(-25.000000, -25.337838) " points="22.972973 37.8378378 27.027027 37.8378378 27.027027 12.8378378 22.972973 12.8378378"></polygon>
+            <polygon id="Fill-44-Copy-2" fill="#263332" transform="translate(25.000000, 34.797297) rotate(90.000000) translate(-25.000000, -34.797297) " points="22.972973 47.2972973 27.027027 47.2972973 27.027027 22.2972973 22.972973 22.2972973"></polygon>
+        </g>
+    </g>
+</svg>

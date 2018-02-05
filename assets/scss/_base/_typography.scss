@@ -1,0 +1,110 @@
+// Typography
+@font-face {
+  font-family: 'GreyCliff_Regular';
+  src: url('../fonts/greycliff-cf-regular-webfont.woff2') format('woff2'),
+       url('../fonts/greycliff-cf-regular-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Font Primaries
+$font_primary: 'Cabin', sans-serif;
+$font_secondary: 'Caveat', cursive;
+$font_tertiary: 'GreyCliff_Regular', serif;
+
+// Headers etc
+h1 {
+
+  font-size: 34px;
+  font-family: $font_secondary;
+  color: $wood-smoke;
+  margin: 0;
+  padding: 20px 0;
+
+  &.heading--secondary {
+    color: $pear-lusta;
+  }
+
+}
+
+h2 {
+
+  font-size: 22px;
+  font-family: $font_tertiary;
+  padding: 10px;
+
+}
+
+h3 {
+  font-size: 24px;
+  font-family: $font_secondary;
+  color: $wood-smoke;
+  padding: 20px 0;
+
+  &--custom {
+    color: $cinnarbar;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  // font-family: greycliff demibold;
+  color: $wood-smoke;
+}
+
+h5 {
+
+  font-family: $font_tertiary;
+  font-size: 16px;
+  color: $cinnarbar;
+
+}
+
+p, .text--secondary, .text--tertiary {
+
+  font-family: $font_primary;
+  font-size: 16px;
+  line-height: 1.55;
+  color: $wood-smoke;
+  margin: 0;
+  padding: 10px 0;
+
+  &.text--secondary {
+    color: $pear-lusta;
+  }
+
+  &.text--tertiary {
+    color: $cinnarbar;
+  }
+
+}
+
+.text--lead, .text--lead--secondary {
+
+  font-family: $font_primary;
+  font-size: 18px;
+  color: $wood-smoke;
+  line-height: 1.55;
+
+  &.text--lead--secondary {
+    color: $pear-lusta;
+
+  }
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.red {
+  color: $cinnarbar;
+}
+
+.link__ayup-email {
+  text-decoration: underline;
+}

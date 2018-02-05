@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="231px" viewBox="0 0 175 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Booking facing shapes</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HF-V3---Main-scroll" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-294.000000, -1362.000000)">
+        <g id="Booking" transform="translate(149.000000, 1272.000000)">
+            <g id="Booking-facing-shapes" transform="translate(123.000000, 90.000000)">
+                <path d="M70.7093231,216.231996 L182.292081,216.231996 L182.292081,140.766594 L70.7093231,140.766594 L70.7093231,216.231996 Z M56,231 L197,231 L197,126 L56,126 L56,231 Z" id="Fill-25-Copy-2" fill="#8A8C77"></path>
+                <polygon id="Fill-32-Copy" fill="#DC8F69" points="179 102 197 102 197 0 179 0"></polygon>
+                <path d="M69.7680039,90.2319961 L145.233406,90.2319961 L145.233406,14.7665942 L69.7680039,14.7665942 L69.7680039,90.2319961 Z M55,105 L160,105 L160,0 L55,0 L55,105 Z" id="Fill-25-Copy" fill="#E9CC9D"></path>
+                <path d="M48.698883,73.5 C48.698883,53.0048753 64.8483298,36.3290295 85,35.6998875 L85,20 C55.7293938,20 32,43.953256 32,73.5 C32,103.046744 55.7293938,127 85,127 L85,111.300113 C64.8483298,110.670971 48.698883,93.9951247 48.698883,73.5" id="Fill-36-Copy" fill="#E95741" transform="translate(58.500000, 73.500000) rotate(50.000000) translate(-58.500000, -73.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

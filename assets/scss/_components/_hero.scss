@@ -1,0 +1,40 @@
+
+
+.hero {
+
+  height: 938px;
+  width: $max-width;
+  background-color: $outer-space;
+  display: table;
+  text-align: center;
+  background-image: url('/assets/media/shapes/hero__background.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  overflow: hidden;
+
+  &--handbook {
+      height: 270px;
+      width: $max-width;
+      background-position: 100% 45%;
+  }
+
+  &__content {
+
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+
+  &__logo {
+
+    &--handbook {
+    text-align: center;
+    padding: 40px;
+    }
+  }
+
+}
+
+.hero--handbook {
+
+}
