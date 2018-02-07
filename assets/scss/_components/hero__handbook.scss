@@ -1,0 +1,12 @@
+.hero--handbook {
+    height: 270px;
+    width: $max-width;
+    background-color: $outer-space;
+    display: table;
+    text-align: center;
+    background-image: url('/assets/media/shapes/hero__background.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position: 100% 45%;
+    overflow: hidden;
+}

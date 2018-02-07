@@ -30,32 +30,41 @@
     }
 
     &__media {
+      height: 100%;
       width: 40%;
       display: table-cell;
-      vertical-align: middle;
+      vertical-align: bottom;
 
-      &--img-left {
+      &--left {
         vertical-align: middle;
         padding-left: 150px;
       }
 
-      &--img-right {
+      &--right {
         vertical-align: middle;
         padding-right: 100px;
       }
 
-      &--grey-square, &--red-square {
-        display: block;
-        vertical-align: baseline; //Not Working
+      &--total {
+        vertical-align: top;
+        padding-top: 100px;
       }
 
+      &--heading {
+        line-height: 1.8;
+      }
 
+      &--img-right {
+        padding-right: 100px;
+      }
 
       &--40 {
         padding: 100px 100px 100px 0px;
       }
 
   }
+
+
 
     &--reverse {
 
@@ -72,32 +81,42 @@
 
   }
 
+  .wrapper__content--header1:before {
+    content: url('/assets/media/shapes/rectangle-bullet.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
+  .wrapper__content--header2:before {
+    content: url('/assets/media/shapes/diagonal-bullet.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
+  .wrapper__content--header3:before {
+    content: url('/assets/media/shapes/circle-bullet.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
-.wrapper__content--header1::before {
-  content: url('/assets/media/shapes/rectangle-bullet.svg');
-}
+  .wrapper__content--header4:before {
+    content: url('/assets/media/shapes/half-circle-bullet.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
-.wrapper__content--header2::before {
-  content: url('/assets/media/shapes/diagonal-bullet.svg');
-}
+  .wrapper__content--header5:before {
+    content: url('/assets/media/shapes/double-square-bullet.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
-.wrapper__content--header3::before {
-  content: url('/assets/media/shapes/circle-bullet.svg');
-}
+  .wrapper__content--header6:before {
+    content: url('/assets/media/shapes/handbook/bullet--doughnut-circle.svg');
+    position: absolute;
+    margin-left: -55px;
+  }
 
-.wrapper__content--header4::before {
-  content: url('/assets/media/shapes/half-circle-bullet.svg');
-}
-
-.wrapper__content--header5::before {
-  content: url('/assets/media/shapes/double-square-bullet.svg');
-}
-
-.wrapper__content--header6::before {
-  content: url('/assets/media/shapes/handbook/bullet--doughnut-circle.svg');
-}
 
 .ayup-map {
   display: block;

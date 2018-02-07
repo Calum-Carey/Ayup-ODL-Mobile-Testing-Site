@@ -5,6 +5,7 @@
   font-family: $font-primary;
   font-weight: 700;
   font-size: 18px;
+  display: inline-block;
   text-decoration: none;
   vertical-align: middle;
   color: $white;
@@ -21,20 +22,20 @@
     padding: 10px 25px;
     font-family: $font_tertiary;
     font-size: 22px;
-    background-color: $black;
+    background-color: $wood-smoke;
     border-bottom: 3px solid $shadow-green;
     color: $shadow-green;
     margin: 20px 0;
+    display: inline-block;
 
     &:hover {
       color: $black;
       background-color: $shadow-green;
-      border-bottom: 3px solid $black;
+      border-bottom: 3px solid $wood-smoke;
     }
 
     &--handbook {
-      float: left;
-      margin: 0 20px;
+
     }
 
   }
@@ -61,14 +62,26 @@
     }
   }
 
-  &__down-arrow {
-    &:after {
-      width: 0;
-      height: 0;
-      border-left: 25px solid transparent;
-      border-right: 25px solid transparent;
-      border-top: 50px solid #555;
-    }
+  &__down-arrow  {
+
+      display: inline-block;
+      width: 10;
+      height: 10;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid $wood-smoke;
+
+  }
+
+  &__left-arrow {
+
+      display: inline-block;
+      width: 10;
+      height: 10;
+      border-right: 20px solid $wood-smoke;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+
   }
 
 }
