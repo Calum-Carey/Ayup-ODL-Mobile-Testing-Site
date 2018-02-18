@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="41px" height="39px" viewBox="0 0 41 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>Fill 46</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="HF-V3---Main-scroll" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-276.000000, -3252.000000)">
-        <g id="Handbook" transform="translate(147.000000, 3160.000000)" stroke="#E9CC9D" stroke-width="7">
-            <g id="Group" transform="translate(129.000000, 92.000000)">
-                <rect id="Rectangle-Copy-6" transform="translate(11.500000, 11.000000) rotate(90.000000) translate(-11.500000, -11.000000) " x="4.5" y="3.5" width="14" height="15"></rect>
-                <rect id="Rectangle-Copy-6" transform="translate(29.500000, 28.000000) rotate(90.000000) translate(-29.500000, -28.000000) " x="22.5" y="20.5" width="14" height="15"></rect>
-            </g>
+    <g id="8.0-Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-730.000000, -271.000000)">
+        <g id="Dark-green" transform="translate(295.000000, 270.000000)" fill="#2B3232">
+            <path d="M477.154,66.46 L500.439,66.46 L500.439,43.175 L477.154,43.175 L477.154,66.46 Z M444.543,33.849 L467.828,33.849 L467.828,10.564 L444.543,10.564 L444.543,33.849 Z M476.944,34.009 L476.944,1.448 L435.328,1.448 L435.328,43.064 L467.987,43.064 L467.987,75.625 L509.605,75.625 L509.605,34.009 L476.944,34.009 Z" id="Fill-46"></path>
         </g>
     </g>
 </svg>

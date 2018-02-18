@@ -1,10 +1,10 @@
 .button {
-  padding: 10px 20px;
-  border-radius: 1px;
-  margin-top: 10px;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  @include border-radius(0.1rem);
+  margin-top: 0.5em;
   font-family: $font-primary;
   font-weight: 700;
-  font-size: 18px;
   display: inline-block;
   text-decoration: none;
   vertical-align: middle;
@@ -19,13 +19,13 @@
 
 
   &__hero {
-    padding: 10px 25px;
-    font-family: $font_tertiary;
     font-size: 22px;
+    padding: 0.6em 1.2em;
+    margin: 0.9em 0;
+    font-family: $font_tertiary;
     background-color: $wood-smoke;
     border-bottom: 3px solid $shadow-green;
     color: $shadow-green;
-    margin: 20px 0;
     display: inline-block;
 
     &:hover {
@@ -34,14 +34,11 @@
       border-bottom: 3px solid $wood-smoke;
     }
 
-    &--handbook {
-
-    }
 
   }
 
   &--secondary {
-    margin-left: 20px;
+    margin-left: 1em;
     color: $white;
     background-color: $shadow-green;
 
@@ -62,26 +59,31 @@
     }
   }
 
-  &__down-arrow  {
+}
 
-      display: inline-block;
-      width: 10;
-      height: 10;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid $wood-smoke;
+/*.button__hero--left-arrow:before {
 
-  }
+    position: absolute;
+    top: 2px;
+    bottom: 6px;
+    width: 0;
+    height: 0;
+    content: '';
+    display: inline-block;
+    border-right: 1.5rem solid $wood-smoke;
+    border-bottom: 1.5rem solid transparent;
+    border-top: 1.5rem solid transparent;
 
-  &__left-arrow {
+}*/
 
-      display: inline-block;
-      width: 10;
-      height: 10;
-      border-right: 20px solid $wood-smoke;
-      border-bottom: 20px solid transparent;
-      border-top: 20px solid transparent;
+.button__hero--down-arrow:before {
 
-  }
+    position: absolute;
+    margin-bottom: -60px;
+    display: inline-block;
+    content: '';
+    border-right: 1.5rem solid transparent;
+    border-left: 1.5rem solid transparent;
+    border-top: 1.5rem solid $wood-smoke;
 
 }

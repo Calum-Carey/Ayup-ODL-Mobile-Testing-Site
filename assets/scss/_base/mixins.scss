@@ -1,0 +1,32 @@
+@mixin custom-bullet {
+
+  position: absolute;
+  margin-left: -55px;
+
+}
+
+@mixin border-radius($radius){
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+      border-radius: $radius;
+
+}
+
+@mixin custom-list {
+
+  padding-right: 20px;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+@mixin placeholder($color) {
+
+  -webkit-input-placeholder: $color; /* Chrome/Opera/Safari */
+  -moz-placeholder: $color;  /* Firefox 19+ */
+  -ms-input-placeholder: $color;  /* IE 10+ */
+  -moz-placeholder: $color; /* Firefox 18- */
+
+}

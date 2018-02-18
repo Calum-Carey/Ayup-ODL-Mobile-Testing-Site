@@ -16,11 +16,11 @@ $font_tertiary: 'GreyCliff_Regular', serif;
 
 h1 {
 
-  font-size: 34px;
+  font-size: 2.1rem;
   font-family: $font_secondary;
   color: $wood-smoke;
   margin: 0;
-  padding: 20px 0;
+  line-height: 1.7;
 
   &.heading--secondary {
     color: $pear-lusta;
@@ -30,17 +30,17 @@ h1 {
 
 h2 {
 
-  font-size: 22px;
+  font-size: 1.4rem;
   font-family: $font_tertiary;
-  padding: 10px;
+  padding: 1.2rem;
 
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: $font_secondary;
   color: $wood-smoke;
-  padding: 20px 0;
+  padding: 2.4rem 0;
 
   &--custom {
     color: $cinnarbar;
@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.4rem;
   // font-family: greycliff demibold;
   color: $wood-smoke;
 }
@@ -56,7 +56,7 @@ h4 {
 h5 {
 
   font-family: $font_tertiary;
-  font-size: 16px;
+  font-size: 1rem;
   color: $cinnarbar;
 
 }
@@ -64,11 +64,10 @@ h5 {
 p, .text--secondary, .text--tertiary {
 
   font-family: $font_primary;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.7;
   color: $wood-smoke;
-  margin: 0;
-  padding: 10px 0;
+  padding: 0.6rem 0;
 
   &.text--secondary {
     color: $pear-lusta;
@@ -80,12 +79,16 @@ p, .text--secondary, .text--tertiary {
 
 }
 
-.text--lead, .text--lead--secondary {
+.text--lead, .text--lead--secondary, .text--lead--email {
 
   font-family: $font_primary;
   font-size: 18px;
   color: $wood-smoke;
-  line-height: 1.55;
+  line-height: 1.7;
+
+  &.text--lead--email {
+    text-decoration: underline;
+  }
 
   &.text--lead--secondary {
     color: $pear-lusta;
@@ -102,9 +105,6 @@ a {
   }
 }
 
-.red {
-  color: $cinnarbar;
-}
 
 .link__ayup-email {
   text-decoration: underline;

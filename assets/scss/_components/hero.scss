@@ -1,6 +1,6 @@
-.hero--handbook {
+.hero {
 
-  height: 293px;
+  height: 938px;
   max-width: $max-width;
   width: 100%;
   position: relative;
@@ -9,39 +9,43 @@
   text-align: center;
   background-image: url('/assets/media/shapes/hero__background.svg');
   background-repeat: no-repeat;
-  background-position: 100% 55%;
+  background-position: 100% 0%;
   overflow: hidden;
 
   @media screen and (max-width: 1320px){
-    background-position: 50% 0%;
+    background-position: -30% -10%;
   }
   @media screen and (max-width: 1100px){
-    background-position: 25% 0%;
+    background-position: -15% 0%;
     text-align: center;
   }
   @media screen and (max-width: 769px){
     background-position: 15% 0%;
-  }
-  @media screen and (max-width: 600px){
-    background-position: 5% 0%;
   }
   @media screen and (max-width: 420px) {
     height: 700px;
     background-image: url('/assets/media/shapes/mobile-shapes-BG.svg');
     background-size: contain;
     background-position: 0% 0%;
+
+  }
+
+
+  &__content, &--handbook {
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+
+  &__logo {
+
+    &--img {
+    height: 300px;
+    width: 300px;
+
+    }
   }
 
 }
-  /*@media screen and (max-width: 420px){
-    background-position: 100% -100%;
-  }*/
-
-/*.hero__logo {
-  display: table-cell;
-
-  &--img {
-    position: absolute;
-    top: -45%;
-  }
-}*/

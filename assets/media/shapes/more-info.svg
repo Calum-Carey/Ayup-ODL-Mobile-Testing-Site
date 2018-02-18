@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>More info</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="5.0-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-301.000000, -306.000000)" stroke-linecap="square">
+        <g id="More-info" transform="translate(310.000000, 315.000000) rotate(45.000000) translate(-310.000000, -315.000000) translate(304.000000, 309.000000)" stroke="#E95741" stroke-width="4">
+            <path d="M6,6 L0,12 L6,6 L0,0 L6,6 Z M6,6 L12,0 L6,6 L12,12 L6,6 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

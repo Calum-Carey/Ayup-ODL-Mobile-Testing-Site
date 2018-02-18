@@ -6,13 +6,14 @@
 @import '_base/colors';
 @import '_base/typography';
 @import '_base/grid';
+@import '_base/mixins';
 
 // Components
 @import '_components/table';
-@import '_components/bg-icons';
 @import '_components/hero';
 @import '_components/hero__handbook';
-@import '_components/button';
-@import '_components/sections';
 @import '_components/nav';
+@import '_components/button';
+@import '_components/imgs';
+@import '_components/sections';
 @import '_components/footer';
