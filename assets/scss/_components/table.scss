@@ -114,8 +114,9 @@ td, .table__th {
     padding: 20px 0;
 
     &::before {
-      content: url("/assets/media/logos/Apple_Icon.svg");
-      padding-right: 20px;
+      content: '\f179';
+      font-family: "fontello";
+      padding-right: 1rem;
       vertical-align: middle;
       text-align: center;
     }
@@ -124,33 +125,37 @@ td, .table__th {
   &--list2, &--list3, &--list4 {
     font-family: $font_primary;
     font-size: 22px;
-    padding: 10px 0;
+    padding: 1rem 0;
   }
 
-    &--list2::before {
-        content: url("/assets/media/logos/OS_logo.svg");
-        @include custom-list;
-    }
+  &--list2::before {
+    content: '\e803';
+    font-family: "fontello";
+    @include custom-list;
+  }
 
-    &--list3::before {
-        content: url('/assets/media/logos/safari_logo.svg');
-        @include custom-list;
-    }
+  &--list3::before {
+    content: '\e805';
+    font-family: "fontello";
+    @include custom-list;
+  }
 
-    &--list4::before {
-        content: url('/assets/media/logos/resolution.svg');
-        @include custom-list;
-    }
+  &--list4::before {
+    content: '\e804';
+    font-family: "fontello";
+    @include custom-list;
+  }
 
   &--list5 {
       font-family: $font_primary;
       font-size: 20px;
       color: $cinnarbar;
-      padding: 10px 0;
+      padding: 1rem 0;
 
     &::before {
-        content: url('/assets/media/logos/ayup_icon.svg');
-        @include custom-list;
+      content: '\e802';
+      font-family: "fontello";
+      @include custom-list;
     }
   }
 

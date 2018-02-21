@@ -6,12 +6,12 @@
 .container--alt {
 
   @media screen and (max-width: 1320px) {
-  display: block;
-  padding: 6rem 6rem 6rem 12rem !important;
+    display: block;
+    padding: 6rem 6rem 6rem 12rem !important;
   }
   @media screen and (max-width: 1100px) {
-  display: block;
-  padding: 6rem 6rem 6rem 9rem !important;
+    display: block;
+    padding: 6rem 6rem 6rem 9rem !important;
   }
   @media screen and (max-width: 420px ) {
     width: 100% !important;
@@ -51,7 +51,6 @@
       @media screen and (max-width: 1320px) {
         width: 100% !important;
         display: block;
-        padding: 6rem 6rem 6rem 12rem !important;
       }
 
       @media screen and (max-width: 1100px) {
@@ -105,7 +104,6 @@
         font-size: 2.1rem;
         font-family: $font_secondary;
         color: $wood-smoke;
-        margin: 0;
         line-height: 1.7;
       }
 
@@ -117,10 +115,10 @@
       display: table-cell;
       vertical-align: bottom;
 
-      @media screen and (max-width: 1320px) {
-        width: 100% !important;
-        display: none;
-      }
+    @media screen and (max-width: 1320px) {
+      width: 100% !important;
+      display: none;
+    }
 
       &--middle {
         vertical-align: middle;
@@ -150,18 +148,14 @@
 
       &--red-square {
         max-width: 90%;
-        vertical-align: bottom;
+        vertical-align: middle;
         text-align: center;
-      }
-
-      &__img--red-square {
-        width: 90%;
-        vertical-align: bottom;
       }
 
       &--grey-square {
         width: 80%;
         text-align: center;
+        vertical-align: bottom;
       }
 
       &--map {
@@ -200,53 +194,58 @@
 
 
   .wrapper__content--header1:before {
-    content: url('/assets/media/shapes/rectangle-bullet.svg');
+
+    content: '\e806';
+    font-family:"fontello";
     @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none
-    }
+    @include bullet-none;
+
   }
 
   .wrapper__content--header2:before {
-    content: url('/assets/media/shapes/diagonal-bullet.svg');
+
+    content: '\e806';
+    font-family:"fontello";
     @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none;
-    }
+    @include bullet-none;
+
   }
 
   .wrapper__content--header3:before {
-    content: url('/assets/media/shapes/circle-bullet.svg');
+
+    content: '\e806';
+    font-family:"fontello";
     @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none;
-    }
+    @include bullet-none;
+
   }
 
   .wrapper__content--header4:before {
-    content: url('/assets/media/shapes/half-circle-bullet.svg');
+
+    content: '\e806';
+    font-family:"fontello";
     @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none;
-    }
+    @include bullet-none;
+
   }
 
   .wrapper__content--header5:before {
-    content: url('/assets/media/shapes/double-square-bullet.svg');
+
+    content: '\e806';
+    font-family:"fontello";
     @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none;
-    }
+    @include bullet-none;
+
   }
 
   .wrapper__content--header6:before {
-    content: url('/assets/media/shapes/handbook/bullet--doughnut-circle.svg');
-    @include custom-bullet;
-    @media screen and (max-width: 420px){
-      display: none;
-    }
-  }
 
+    content: '\e806';
+    font-family:"fontello";
+    @include custom-bullet;
+    @include bullet-none;
+
+  }
 
 .ayup-map {
   display: block;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="27px" viewBox="0 0 34 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="27"></rect>
+    </defs>
+    <g id="HF-V3---Main-scroll" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-342.000000, -3619.000000)">
+        <g id="Footer" transform="translate(-73.000000, 3536.000000)">
+            <g id="Social" transform="translate(415.000000, 83.000000)">
+                <g id="Group-2">
+                    <g id="Path-5">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
