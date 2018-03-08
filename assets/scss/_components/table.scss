@@ -43,7 +43,7 @@ td {
 td, .table__th {
 
   &:first-child {
-    padding-left: 3rem;
+    padding-left: 7rem;
     @media screen and (max-width: 768px){
       padding-left: 1rem;
     }
@@ -75,9 +75,19 @@ td, .table__th {
   overflow: hidden;
   list-style: none;
   padding: 6rem 12rem;
-  @media screen and (max-width: 1100px) {
-    padding: 3rem 6rem;
+
+  @media screen and (max-width: 1100px) { // SAME AS CONTENT NEATEN
+    padding: 3rem 12rem;
   }
+
+  @media screen and (max-width: 769px) {
+    padding: 3rem 4rem 1rem 6rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 1rem 3rem;
+  }
+
 
   &--content,
   &--media {
@@ -111,7 +121,7 @@ td, .table__th {
   &--list1 {
     font-family: $font_secondary;
     font-size: 34px;
-    padding: 20px 0;
+    padding: 1rem 0.4rem;
 
     &::before {
       content: '\f179';
@@ -129,21 +139,24 @@ td, .table__th {
   }
 
   &--list2::before {
-    content: '\e803';
+    content: '\e811';
     font-family: "fontello";
     @include custom-list;
+    font-size: 34px;
   }
 
   &--list3::before {
-    content: '\e805';
+    content: '\e813';
     font-family: "fontello";
     @include custom-list;
+    font-size: 34px;
   }
 
   &--list4::before {
-    content: '\e804';
+    content: '\e812';
     font-family: "fontello";
     @include custom-list;
+    font-size: 34px;
   }
 
   &--list5 {
@@ -153,9 +166,10 @@ td, .table__th {
       padding: 1rem 0;
 
     &::before {
-      content: '\e802';
+      content: '\e810';
       font-family: "fontello";
       @include custom-list;
+      font-size: 34px;
     }
   }
 
@@ -172,6 +186,14 @@ form {
     border-style: none;
 
   }
+}
+
+.icon-more-info {
+
+  position: absolute;
+  color: $cinnarbar;
+  font-size: 3rem;
+
 }
 
 /* @include placeholder($cinnarbar); */

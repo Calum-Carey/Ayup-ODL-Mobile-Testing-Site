@@ -30,9 +30,3 @@
   -moz-placeholder: $color; /* Firefox 18- */
 
 }
-
-@mixin bullet-none {
-  @media screen and (max-width: 420px){
-    display: none;
-  }
-}

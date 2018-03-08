@@ -1,9 +1,8 @@
 .footer {
 
-  max-width: $max-width;
   width: 100%;
   height: 196px;
-  position: relative;
+  position: absolute;
   display: table;
   background-color: $pear-lusta;
   overflow: hidden;
@@ -16,59 +15,89 @@
     width: 50%;
     position: relative;
 
+    @media screen and (max-width: 420px){
+
+      width: 100%;
+
+    }
+
   }
 }
 
-.footer__left__image {
+.footer__left {
 
-  position: absolute;
+  vertical-align: middle;
 
-  &--shapes {
-    top: 10%;
-    left: 0%;
-    @media screen and (max-width: 600px) {
-      display: none;
-    }
-  }
-
-  &--social {
-    right: 30%;
-    top: 40%;
+  &__shapes {
 
     @media screen and (max-width: 768px) {
-      right: 20%;
-    }
-    @media screen and (max-width: 600px) {
-      right: 15%;
+      display: none;
     }
 
-    &:hover {
-
-      color: $copperfield;
-      cursor: pointer;
-    }
   }
 
+  &__social {
+
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    &--twitter, &--email {
+
+      padding: 0 2rem;
+      color: $cinnarbar;
+      font-size: 1.8rem;
+
+      @media screen and (max-width: 768px){
+
+        padding: 0 0.5rem;
+        font-size: 1.5rem;
+
+      }
+
+      @media screen and (max-width: 420px){
+
+        padding: 0 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+
+      }
+
+
+      &:hover {
+
+        color: $copperfield;
+
+      }
+
+    }
+
+  }
 }
 
 .footer__right__image {
-  position: absolute;
-  @media screen and (max-width: 600px) {
+
+  position: relative;
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
 
   &--rectangle-md {
-    //bottom: 0px;
+
+    position: absolute;
     bottom: 0%;
-    //right: 50px;
     right: 3%;
+
   }
 
   &--arrow {
-    //top: 50px;
+
+    position: absolute;
     top: 15%;
-    //right: 190px;
-    right: 25%;
+    right: 30%;
+    color: $bitter;
+
   }
 }
 
@@ -76,20 +105,24 @@
 
   position: absolute;
   top: 45%;
-  //top: 90px;
-  left: 15%;
-  //left: 210px;
+  left: 20%;
   font-family: $font_primary;
   color: $bitter;
   font-size: 18px;
 
+  @media screen and (max-width: 420px){
+
+    top: 25%;
+    left: 27%;
+    text-align: center;
+
+  }
+
 }
 
-.red {
-  color: $cinnarbar;
-  font-size: 1.5rem;
 
-  &__footer {
-    font-size: 1.1rem;
-  }
+.icon-arrow {
+
+  font-size: 2.5rem;
+
 }

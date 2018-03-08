@@ -1,0 +1,22 @@
+
+.icon-cancel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-arrow { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-bullet-square { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.icon-circle-bullet { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-circle-shape { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.icon-double-square-shape { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.icon-close-nav { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
+.icon-email { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.icon-half-circle-bullet { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;'); }
+.icon-menu-arrow { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
+.icon-menu-back { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
+.icon-mobile__nav { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
+.icon-more-info { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
+.icon-rectangle-shape { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
+.icon-ayup_icon { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;'); }
+.icon-os_logo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;'); }
+.icon-resolution { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); }
+.icon-safari_logo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe813;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe814;&nbsp;'); }
+.icon-line-shape { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe815;&nbsp;'); }
+.icon-apple { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf179;&nbsp;'); }
