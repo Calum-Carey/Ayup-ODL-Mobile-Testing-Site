@@ -124,8 +124,7 @@
             <p>Ayup, Aire Street Workshops,<br> Aire St, Leeds, LS1 4HT</p>
           </div>
 
-          <div class="wrapper__media">
-            <img src="/assets/media/images/map.png" class="ayup-map img-responsive" alt="ayup location on map">
+          <div id='js-googleMap' class="wrapper__media wrapper__media--map hide-on-tablet">
           </div>
 
         </div>
@@ -149,7 +148,7 @@
 
     <div class="footer__right">
 
-      <h6 class="footer__right--copyright">Made & run by <span class="red red__footer">Ayup</span></h6>
+      <h6 class="footer__right--copyright">Made & run by <span class="span-red span-red--footer">Ayup</span></h6>
 
       <img src="/assets/media/shapes/background-notFont/rectangle-half.svg" class="footer__right__image footer__right__image--rectangle-md hide-on-tablet">
 
@@ -160,41 +159,11 @@
     </div>
   </footer>
 
-</body>
-</html>
+<script type="text/javascript" src="/js/main.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgakSoEJg9PhRjP-2JRWRNmvxp76toPrM&callback=initMap">
+</script>
 
 </body>
 </html>

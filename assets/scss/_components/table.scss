@@ -1,7 +1,26 @@
 .table {
+
   width: 100%;
   border-collapse: collapse;
+  overflow: scroll;
+
+  &__head {
+
+    //display: inline-block;
+
+  }
+
+  &__body {
+
+    overflow: scroll;
+    height: 500px;
+    width: 100%
+    //position: absolute;
+
+  }
+
 }
+
 
 td {
   text-align: center;
@@ -10,17 +29,14 @@ td {
   padding: 10px 0;
 }
 
-/*.table__th {
-  @media screen and (max-width: 420px) {
-    &:before {
-      .placeholder {
-        clear: both;
-        display: block;
-        text-align: center;
-      }
-    }
-  }
-} */
+// Added drop down arrows to table__th //
+
+.table__th:after {
+  content: url(/assets/media/shapes/dropUp-arrow.svg); //should i turn this into fontello? - LOOK IT UP
+  margin-left: 0.5em;
+  cursor: pointer; //
+}
+
 
 .table__th, .table__search {
     font-family: $font_secondary;
@@ -51,10 +67,21 @@ td, .table__th {
 
 }
 
+// tboy with the scroll feature
+
+
+
 .row {
+
+  //display: block; // USED TO MAKE SCROLL WORK
+  // position: relative;
 
   &:nth-child(2n) {
     background-color: $pear-lusta-half;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
 }
@@ -65,16 +92,15 @@ td, .table__th {
       display:none;
   }
 
-
-
 }
 
-.table__expand {
-  display: table;
+.table__expand, {
   width: 100%;
   overflow: hidden;
   list-style: none;
   padding: 6rem 12rem;
+
+  // TABLE EXPAND MEDIA QUERIES >>
 
   @media screen and (max-width: 1100px) { // SAME AS CONTENT NEATEN
     padding: 3rem 12rem;
@@ -89,6 +115,14 @@ td, .table__th {
   }
 
 
+// TOGGLE COLLAPSED class //
+
+/* .collapsed {
+  display: none;
+} */
+
+// << TABLE EXPAND MEDIA QUERIES
+
   &--content,
   &--media {
     box-sizing: border-box;
@@ -98,9 +132,6 @@ td, .table__th {
     padding: 0;
     list-style-type: none;
     }
-
-  &--content {
-  }
 
   &--media {
     float: right;
@@ -180,7 +211,7 @@ form {
     font-family: $font_secondary;
     color: $cinnarbar;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 0 0 0 10px;
     margin: 0px;
     border-style: none;
@@ -197,3 +228,14 @@ form {
 }
 
 /* @include placeholder($cinnarbar); */
+
+
+// --------- Expland Div styling here ------------ //
+
+.collapsed {
+  display: none;
+  animation-duration: 0.4s;
+}
+
+
+// For TOGGLE EXPAND ON CLICK

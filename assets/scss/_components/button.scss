@@ -18,7 +18,8 @@
 
 
 
-  &__hero {
+  &__hero,
+  &--handbook {
     font-size: 22px;
     padding: 0.6em 1.2em;
     margin: 0.9em 0;
@@ -40,7 +41,7 @@
       position: absolute;
       bottom: -48px;
       left: 7rem;
-      text-shadow: black -3px 0px;
+      text-shadow: $shadow-green-half -2px 0px;
       font-family: "fontello";
       color: $wood-smoke;
       font-size: 2.5rem;

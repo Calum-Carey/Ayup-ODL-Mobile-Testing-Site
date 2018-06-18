@@ -12,11 +12,11 @@ $font_primary: 'Cabin', sans-serif;
 $font_secondary: 'Caveat', cursive;
 $font_tertiary: 'GreyCliff_Regular', serif;
 
-// Base scales
+// Font Colors
 
 h1 {
 
-  font-size: 2.1rem;
+  font-size: 34px;
   font-family: $font_secondary;
   color: $wood-smoke;
   margin: 0;
@@ -30,14 +30,14 @@ h1 {
 
 h2 {
 
-  font-size: 1.4rem;
+  font-size: 22px;
   font-family: $font_tertiary;
   padding: 1.2rem;
 
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-family: $font_secondary;
   color: $wood-smoke;
   padding: 2.4rem 0;
@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 22px;
   // font-family: greycliff demibold;
   color: $wood-smoke;
 }
@@ -56,7 +56,7 @@ h4 {
 h5 {
 
   font-family: $font_tertiary;
-  font-size: 1rem;
+  font-size: 16px;
   color: $cinnarbar;
 
 }
@@ -102,5 +102,16 @@ a {
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.span-red {
+  font-size: 24px;
+  color: $cinnarbar;
+
+  &--footer {
+
+    font-size: 18px;
+
   }
 }

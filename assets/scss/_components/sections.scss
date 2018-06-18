@@ -65,7 +65,7 @@
       height: auto;
       display: table-cell;
       vertical-align: middle;
-      padding: 6rem 6rem 6rem 12rem;
+      padding: 6rem 0rem 6rem 12rem;
 
       @media screen and (max-width: 1320px) {
         width: 100% !important;
@@ -136,6 +136,8 @@
 
           content: '\e808';
           color: $bitter;
+          // transform: rotate(315deg); DOESNT LOOK GOOD UNLESS CAN ADJUST MARGIN?.....
+          // *margin required? THIS ONE IS TOO CLOSE TO HEader
           margin-top: 0.6rem;
           font-size: 1.5rem;
 
@@ -161,6 +163,8 @@
         }
 
       }
+
+      // ALT CONTENT
 
       &--alt {
         padding: 4rem 6rem 6rem 0rem;
@@ -264,7 +268,7 @@
       }
 
       &--grey-square {
-        width: 80%;
+        //width: 80%;
         text-align: center;
         vertical-align: bottom;
 
@@ -276,9 +280,13 @@
       }
 
       &--map {
-          @media screen and (max-width: 1320px) {
-          max-width: 100% !important;
-          display: inline-block !important;
+
+        height: 400px;
+        width: 100%;
+
+        @media screen and (max-width: 1320px) {
+        max-width: 100% !important;
+        display: inline-block !important;
 
         }
       }
@@ -289,10 +297,25 @@
   .link__ayup-email {
 
     text-decoration: underline;
-    
+
   }
 
-.ayup-map {
+// GOOGLE map styling
+
+  #js-googleMap {
+
+    height: 100%;
+    width: 100%;
+
+  }
+
+
+
+
+
+/* NO LONGER REQUIRE PHOTO MAP
+
+  .ayup-map {
 
   display: inline-block;
   vertical-align: bottom;
@@ -301,4 +324,4 @@
   width: 100% !important;
   }
 
-}
+} */

@@ -1,6 +1,7 @@
 .footer {
 
-  width: 100%;
+  max-width: $max-width;
+  width: 100%; //footer is too wide
   height: 196px;
   position: absolute;
   display: table;
@@ -24,6 +25,8 @@
   }
 }
 
+// ----------- LEFT ------------- //
+
 .footer__left {
 
   vertical-align: middle;
@@ -40,24 +43,24 @@
 
     position: absolute;
     top: 45%;
-    left: 45%;
+    left: 40%;
 
     &--twitter, &--email {
 
-      padding: 0 2rem;
+      padding: 0 0.5em;
       color: $cinnarbar;
       font-size: 1.8rem;
 
       @media screen and (max-width: 768px){
 
-        padding: 0 0.5rem;
+        padding: 0 0.5em;
         font-size: 1.5rem;
 
       }
 
       @media screen and (max-width: 420px){
 
-        padding: 0 0.5rem;
+        padding: 0 0.5em;
         font-size: 1.5rem;
         text-align: center;
 
@@ -74,6 +77,8 @@
 
   }
 }
+
+// ---------- RIGHT --------- //
 
 .footer__right__image {
 
@@ -105,10 +110,16 @@
 
   position: absolute;
   top: 45%;
-  left: 20%;
+  left: 30%;
   font-family: $font_primary;
   color: $bitter;
   font-size: 18px;
+
+  @media screen and (max-width: 1100px){ //tags not currently working
+
+    left: 25%;
+
+  }
 
   @media screen and (max-width: 420px){
 
