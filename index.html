@@ -16,11 +16,20 @@
 
   <nav class="nav">
     <ul>
-      <li class="nav__item"><a href="#">About</a></li>
-      <li class="nav__item"><a href="#">Booking</a></li>
-      <li class="nav__item"><a href="#">Devices</a></li>
-      <li class="nav__item"><a href="#">Location</a></li>
-      <li class="nav__item"><a href="handbook.html">Handbook</a></li>
+      <li class="nav__item">
+        <a href="#" class="nav__item--text" id='js-nav-about'>About</a>
+      </li>
+      <li class="nav__item">
+        <a href="404.html" class="nav__item--text" id='js-nav-booking'>Booking</a></li>
+      <li class="nav__item">
+        <a href="#js-devices" class="nav__item--text" id='js-nav-devices'>Devices</a>
+      </li>
+      <li class="nav__item">
+        <a href="#js-location" class="nav__item--text" id='js-nav-location'>Location</a>
+      </li>
+      <li class="nav__item">
+        <a href="handbook.html" class="nav__item--text">Handbook</a>
+      </li>
     </ul>
   </nav>
 
@@ -46,7 +55,7 @@
 
   <main class="main">
 
-    <section class="section">
+    <section class="section" id="js-about">
 
       <div class="container">
         <div class="wrapper">
@@ -66,7 +75,7 @@
     </section>
 
 
-    <section class="section">
+    <section class="section" id="js-booking">
 
       <div class="container">
         <div class="wrapper wrapper--secondary wrapper--reverse">
@@ -87,7 +96,7 @@
 
     </section>
 
-    <section class="section">
+    <section class="section" id="js-devices">
 
       <div class="container">
         <div class="wrapper">
@@ -98,7 +107,7 @@
             <p>A full list of devices can be found below:</p>
           </div>
 
-          <div class="wrapper__media wrapper__media--top">
+          <div class="wrapper__media wrapper__media--writing">
             <h3 class="wrapper__media--heading">Total number of devices: <span class="span-red">19</span></h3>
           </div>
 
@@ -311,7 +320,8 @@
 
       <div class="container">
 
-        <div class="table__expand collapsed">
+        <tr class="table__expand collapsed">
+          <td colspan="5">
           <ul class="table__expand--content">
             <li class="table__expand--list1">iPhone 6 Plus </li>
             <li class="table__expand--list2">iOS-10.2</li>
@@ -320,10 +330,9 @@
             <li class="table__expand--list5">Ayup Digital</li>
           </ul>
 
-          <div class="table__expand--media">
             <img src="/assets/media/images/iPhone.png" class="iphone img-responsive">
-          </div>
-        </div>
+          </td>
+        </tr>
 
       </div>
 
@@ -331,7 +340,7 @@
 
     <!-- THERE WILL BE A POP UP JAVASCRIPT DIV HERE -->
 
-    <section class="section">
+    <section class="section" id="js-location">
 
       <div class="container">
         <div class="wrapper wrapper--secondary wrapper--reverse">
@@ -343,7 +352,7 @@
           </div>
 
           <div id='js-googleMap' class="wrapper__media wrapper__media--map hide-on-tablet">
-          </div> 
+          </div>
 
           <!-- Inserting Google API map here -->
 

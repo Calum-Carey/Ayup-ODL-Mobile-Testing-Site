@@ -36,7 +36,7 @@
 
 
 
-  &__content, &__handbook {
+  &__content { // CENTER THE CONTENT
 
     display: table-cell;
     vertical-align: middle;
@@ -55,12 +55,88 @@
 
 }
 
-.icon-menu-back {
+/* .icon-menu-back { NOT SURE WHAT THIS IS RELEVANT TO? ARROWS?
 
-  font-size: 2rem;
-  -webkit-transform: rotate(270deg); //NOT WORKING
+  font-size: rem;
+  -webkit-transform: rotate(270deg); //NOT WORKING (18TH JUNE)
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
 
+} */
+
+
+//  ---------------------------------------------- //
+
+// --------------- HANBOOK ----------------------- //
+
+.hero {
+  &__handbook {
+
+    max-height: 273px;
+    max-width: $max-width;
+    width: 100%;
+    position: relative;
+    background-color: $outer-space;
+    display: table;
+    background-image: url('/assets/media/shapes/background-notFont/hero__background.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 55%;
+    overflow: hidden;
+
+    @media screen and (max-width: 1320px){
+      background-position: 50% 0%;
+    }
+    @media screen and (max-width: 1100px){
+      background-position: 25% 0%;
+      text-align: center;
+    }
+    @media screen and (max-width: 769px){
+      background-position: 15% 0%;
+    }
+    @media screen and (max-width: 600px){
+      background-position: 5% 0%;
+    }
+    @media screen and (max-width: 420px) {
+      height: 700px;
+      background-image: url('/assets/media/shapes/mobile-shapes-BG.svg');
+      background-size: contain;
+      background-position: 0% 0%;
+    }
+
+    &__logo {
+
+      transform: translateY(-20%); // Move logo up y axis
+
+    }
+
+  }
+}
+
+// ------ HERO 404 --- //
+
+.hero__header { // To overlay 'Page 404 banner' on Ayup Logo
+
+  &--404 { // angled 404 message
+
+  top: -75px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.1em 1.2em;
+  border-radius: 1px;
+  font-size: 50px;
+  font-family: $font_secondary;
+  color: $outer-space;
+  background-color: $shadow-green;
+  transform: rotate(-10deg);
+
+  }
+}
+
+.hero__404--div { // Must be a better way?
+
+  position: relative;
+  top: -40px;
+  
 }

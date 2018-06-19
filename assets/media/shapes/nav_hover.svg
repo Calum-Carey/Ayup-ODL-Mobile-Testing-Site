@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="8px" viewBox="0 0 86 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 0 6 93 6 93 0"></polygon>
+    </defs>
+    <g id="Pattern-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9.0-Lines-and-sketches" transform="translate(-460.000000, -1760.000000)">
+            <g id="Page-1-Copy-3" transform="translate(506.500000, 1764.000000) rotate(-1.000000) translate(-506.500000, -1764.000000) translate(460.000000, 1761.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M5.6124808,5.83275022 C30.5442269,6.12145757 55.4725332,6.03649512 80.3939599,5.57703799 C87.8497491,5.43928334 87.887587,-0.135243234 80.3939599,0.00251141759 C55.4725332,0.461143672 30.5442269,0.546106122 5.6124808,0.257398768 C-1.87254674,0.171611439 -1.86910693,5.74613801 5.6124808,5.83275022" id="Fill-1" fill="#DC8F69" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
