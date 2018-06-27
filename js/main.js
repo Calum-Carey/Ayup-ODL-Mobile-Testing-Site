@@ -1,8 +1,9 @@
 // variables
 var row = document.getElementsByClassName('row'); // row variable
 var popup = document.getElementsByClassName('table__expand');
-var table = document.getElementsByClassName('table');
+var tableBody = document.getElementsByClassName('table__body');
 var navText = document.getElementsByClassName('nav__item--text');
+
 // Attach event listeners to each row
 for(var i = 0 ; i < row.length; i++) {
    row[i].addEventListener('click', toggleExpand);
@@ -11,29 +12,41 @@ for(var i = 0 ; i < row.length; i++) {
 //
 // Function to swtich the visibility state of the popup
 //
+
+
 function toggleExpand(e) {
 
   // target row thats clicked
-  var selectedRow = e.target;
 
-/*   // create new tr and td upon click
-  var jsRow = document.createElement('tr');
-  var jsTd = document.createElement('td');
 
-  // attempted appening upon click but no luck
-  jsRow.appendChild(jsTd);
-  jsTd.append(popup[1]);
-*/
-  selectedRow.append(popup[0]);
+  var insertNode = tableBody[0].insertBefore(popup[0], e.target.parentNode);
+
+
+  /*var selectedRow = e.target.parentNode;
+  selectedRow.append(popup[0]); */
+
+
+// INSERT CELL ATTEMPTED METHOD
+  /* var cell = HTMLTableRowElement.insertCell(index = -1);
+  selectedRow.append(cell);
+  cell.append(popup[0]);
+
+  //selectedRow.append(popup[0]);
+
+  console.log(popup); */
 
 //Attempting to append via parent node of tr to <table>. attach the new tr to table. append new row to e.target
 
-  /* jsRow.ParentNode.append(jsTd);
+  /* jsRow.ParentNode.append(jsTd);f
   jsTd.append(selectedRow); */
 
   //appending popup to selected row. butnot */
 
-  //popup[0].classList.toggle('collapsed');
+  if (popup[0].classList.contains('collapsed')) {
+    popup[0].classList.toggle('collapsed');
+  }
+
+
    //array required to distinguish between .table__expand and .collapsed[1]
 
 }
@@ -130,17 +143,28 @@ function initMap() {
 
 // ----------  ^^^^^^^ MAP API ^^^^^^  --------------- //
 
+
+
+
+
 for (var i = 0; i < navText.length; i++) {
-  navText[i].addEventListener('click', circle);
+  navText[i].addEventListener('click', circle, false);
 }
 
 function circle(e){
 
-  var selectedNav = e.target;
-  var circle = document.createElement('img');
-  circle.src = '/assets/media/shapes/nav_circle.svg';
+
+  var selectedNav = e.target.parentNode;
+  var circle = 'url(/assets/media/shapes/nav_circle.svg)';
+
+  selectedNav.style.backgroundImage = circle;
+  selectedNav.style.backgroundRepeat = 'no-repeat';
+
+
   // NEED TO ADD ALTERNATE AND SELECT VAR
-  selectedNav.appendChild(circle);
+  // selectedNav.appendChild(circle);
+
+  // selectedNav[0].classList.toggle(circle);
 
 }
 
@@ -195,3 +219,34 @@ function scroll(e) {
   // WORKS WITH BUTTONS
 });
 */
+
+
+
+
+// <tr class="ssdfsdf" data-id="1">
+// e.target.data.id
+
+// <tr class="ssdfsdf" data-id="2">
+var dbEntry = phoneDb[e.target.data.id] // assign each array to specific row
+
+// dbEntry["make"]
+
+// document.getElementById('popUp_model').innerHtml = dbEntry["make"]
+
+var phoneDb = [
+  1: {
+    "make": "Apple",
+    "model": "iPhone 3",
+    "screenSize", "100x100px",
+    "imageUrl": "htttp://example.com/iphone.jpg"
+  },
+  2: {
+    "make": "Apple",
+    "model": "iPhone 2",
+    "screenSize", "100x100px",
+    "imageUrl": "htttp://example.com/iphone.jpg"
+  },
+  {
+
+  }
+]
