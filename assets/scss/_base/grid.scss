@@ -11,7 +11,7 @@ $break_tablet        : max-width 768px;
 $break_mobile        : max-width 600px;
 $break_mobile_small  : max-width 420px;
 
-*, { // *:after, *:before || after & before having impact on bullet points
+* { // *:after, *:before || after & before having impact on bullet points
 
   box-sizing: border-box;
   margin: 0;
@@ -23,13 +23,12 @@ $break_mobile_small  : max-width 420px;
 body {
 
   max-width: $max-width;
-  // background-color: $outer-space;<-- Idea for Handbook
 
 }
 
 .container {
 
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   @media screen and (max-width: 768px) {
     width: 100%;

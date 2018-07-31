@@ -1,18 +1,17 @@
   .nav {
 
-    @media screen and (max-width: 1435px) {
+    @include breakpoint($break_standard) {
       display: none;
     }
 
-
-    width: 144px;
+    width: $max-width*0.1;
     position: fixed;
-    bottom: 196px;
+
     left: 0;
     border-radius: 3px;
     z-index: 1;
     background-color: $wood-smoke;
-    padding: 0 0 105px 0px;
+    padding: 0 0 10rem 0px;
 
     ul {
 
@@ -27,12 +26,12 @@
         content: "\e80a";
         color: $shadow-green;
         // transform: rotate(180deg); Not looking good
-}
+        }
     }
 
     &__item {
 
-      padding: 2rem 2.5rem 2rem 1.5rem;
+      padding: 2em 0em 2em 1.5em;
 
       &:hover {
 

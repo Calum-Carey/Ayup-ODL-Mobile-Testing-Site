@@ -1,300 +1,116 @@
-.section, .main {
-  clear: both;
-  max-width: $max-width;
-}
 
-.container--alt {
+main {
 
-  @media screen and (max-width: 1320px) {
-    display: block;
-    padding: 6rem 9rem 6rem 12rem !important;
-  }
-  @media screen and (max-width: 1100px) {
-    display: block;
-    padding: 6rem 6rem 6rem 9rem !important;
-  }
-  @media screen and (max-width: 768px) {
-    display: block;
-    padding: 6rem 6rem 6rem 6rem !important;
-  }
-  @media screen and (max-width: 420px ) {
-    width: 100% !important;
-    display: block;
-    padding: 4rem 3rem !important;
-  }
+  width: $max-width*0.8;
+  margin: auto;
 
 }
 
-  .wrapper {
+.container {
+  width: $max-width*0.8;
+  margin: auto;
+}
 
-    display: table;
-    width: 100%;
-    background-color: $pear-lusta;
-    margin: 0 auto;
+.wrapper {
 
-    @media screen and (max-width: 1000px) {
-      display: block;
+  display: table;
+  width: 100%;
+  background-color: $pear-lusta;
+
+  &--secondary {
+    background-color: $white;
+  }
+
+  &--tertiary {
+    background-color: $cinnarbar;
+  }
+
+  &--reverse {
+
+    direction: rtl;
+
+    .wrapper__media {
+      direction: ltr;
     }
 
-
-    &--secondary {
-      background-color: $white;
+    .wrapper__content {
+      direction: ltr;
+      padding-right: 100px;
     }
 
-    &--tertiary {
-      background-color: $cinnarbar;
-    }
+  }
 
-    &--reverse {
+  // WRAPPER__CONTENT
 
-      direction: rtl;
+  &__content {
+    width: 55%;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 6rem 3rem 6rem 12rem;
 
-      .wrapper__media {
-        direction: ltr;
+    &__header {
+
+      &:before {
+
+        @include custom-bullet;
+        font-family:"fontello";
       }
 
-      .wrapper__content {
-        direction: ltr;
-        padding-right: 100px;
-      }
-
-    }
-
-    &__content {
-      width: 55%;
-      height: auto;
-      display: table-cell;
-      vertical-align: middle;
-      padding: 6rem 3rem 6rem 12rem;
-
-      @media screen and (max-width: 1320px) {
-        width: 100% !important;
-        display: block;
-        padding: 6rem 6rem 6rem 9rem !important;
-      }
-
-      @media screen and (max-width: 1100px) {
-        width: 100% !important;
-        display: block;
-      }
-
-      @media screen and (max-width: 768px) {
-        width: 100% !important;
-        display: block;
-        padding: 4rem 4rem 4rem 6rem !important;
-      }
-
-      @media screen and (max-width: 420px ) {
-        width: 100% !important;
-        display: block;
-        padding: 4rem 3rem !important;
-      }
-
-      &__header {
-
-        @media screen and (max-width: 420px) {
-          margin-left: 50px;
-        }
-
+      &--1 {
         &:before {
 
-          @include custom-bullet;
-          font-family:"fontello";
-
-        }
-
-
-        &--1 {
-          &:before {
-
-          content: '\e80f';
-          color: $cinnarbar;
-
-          }
-        }
-
-        &--2 {
-          &:before {
-
-          content: '\e815';
-          color: $shadow-green
-
-          }
-        }
-
-        &--3 {
-          &:before {
-
-          content: '\e804';
-          color: $copperfield;
-
-          }
-        }
-
-        &--4 {
-          &:before {
-
-          content: '\e808';
-          color: $bitter;
-          // transform: rotate(315deg); DOESNT LOOK GOOD UNLESS CAN ADJUST MARGIN?.....
-          // *margin required? THIS ONE IS TOO CLOSE TO HEader
-          margin-top: 0.6rem;
-          font-size: 1.5rem;
-
-          }
-        }
-
-        &--5 {
-          &:before {
-
-          content: '\e805';
-          color: $kangaroo;
-
-          }
-        }
-
-        &--6 {
-          &:before {
-
-          content: '\e803';
-          color: $pear-lusta;
-
-          }
-        }
-
-      }
-
-      // ALT CONTENT
-
-      &--alt {
-        padding: 4rem 6rem 6rem 0rem;
-
-        @media screen and (max-width: 1320px) {
-          display: block;
-          padding: 0 !important;
-        }
-
-      }
-
-      &--block {
-
-        @media screen and (max-width: 1320px){
-          display: block;
-          padding: 0 !important;
-        }
-      }
-
-      // Deleeting this seems like a duplication?
-      /* &--left {
-        padding: 6rem 6rem 6rem 12rem;
-      } */
-
-      &--left-alt {
-        padding: 6rem 3rem 6rem 12rem;
-      }
-
-      &--right {
-        padding: 6rem 6rem 6rem 9rem;
-
-      }
-
-      &--secondary {
-        background: $shadow-green;
-      }
-
-      &--header--false {
-        font-size: 2.1rem;
-        font-family: $font_secondary;
-        color: $wood-smoke;
-        line-height: 1.7;
-      }
-
-    }
-
-
-
-    &__media {
-      max-width: 45%;
-      height: auto;
-      display: table-cell;
-      vertical-align: bottom;
-
-      @media screen and (max-width: 1320px) {
-        width: 100% !important;
-        display: block;
-      }
-
-      &--writing {
-
-
-
-      }
-
-      &--middle {
-        vertical-align: middle;
-        padding-left: 10rem;
-        @media screen and (max-width: 1320px) {
-          max-width: 60%;
-          padding: 2rem 0rem !important;
-        }
-      }
-
-      &--writing {
-        width: 55%;
-        vertical-align: top;
-        padding-top: 100px;
-        padding-left: 1rem;
-        @media screen and (max-width: 1320px) {
-          display: none;
-        }
-      }
-
-      &--heading {
-        line-height: 0;
-        padding: 1.7rem 0;
-      }
-
-      &--right {
-        padding: 6rem;
-        vertical-align: middle;
-        text-align: right;
-
-        @media screen and (max-width: 1320px) {
-          max-width: 75%;
-          padding: 2rem 0rem !important;
-        }
-      }
-
-      &--40 {
-        padding: 100px 100px 100px 0px;
-      }
-
-      &--red-square {
-        max-width: 90%;
-        vertical-align: middle;
-        text-align: center;
-      }
-
-      &--grey-square {
-        //width: 80%;
-        text-align: center;
-        vertical-align: bottom;
-
-        @media screen and (max-width: 1320px) {
-
-          display: none;
+        content: '\e80f';
+        color: $cinnarbar;
 
         }
       }
 
-      &--map {
+      &--2 {
+        &:before {
 
-        height: 400px;
-        width: 100%;
+        content: '\e815';
+        color: $shadow-green
 
-        @media screen and (max-width: 1320px) {
-        max-width: 100% !important;
-        display: inline-block !important;
+        }
+      }
+
+      &--3 {
+        &:before {
+
+        content: '\e804';
+        color: $copperfield;
+
+        }
+      }
+
+      &--4 {
+        &:before {
+
+        content: '\e808';
+        color: $bitter;
+        // transform: rotate(315deg); DOESNT LOOK GOOD UNLESS CAN ADJUST MARGIN?.....
+        // *margin required? THIS ONE IS TOO CLOSE TO HEader
+        margin-top: 0.6rem;
+        font-size: 1.5rem;
+
+        }
+      }
+
+      &--5 {
+        &:before {
+
+        content: '\e805';
+        color: $kangaroo;
+
+        }
+      }
+
+      &--6 {
+        &:before {
+
+        content: '\e803';
+        color: $pear-lusta;
 
         }
       }
@@ -302,34 +118,105 @@
     }
   }
 
-  .link__ayup-email {
+  //WRAPPER ALT CONTENT
+
+  &--alt {
+    padding: 4rem 6rem 6rem 0rem;
+  }
+
+  &--left-alt {
+    padding: 6rem 3rem 6rem 12rem;
+  }
+
+  &--right {
+    padding: 6rem 6rem 6rem 9rem;
+
+  }
+
+  &--secondary {
+    background: $shadow-green;
+  }
+
+  &--header--false {
+    font-size: 2.1rem;
+    font-family: $font_secondary;
+    color: $wood-smoke;
+    line-height: 1.7;
+  }
+
+
+// WRAPPER MEDIA
+
+  &__media {
+    max-width: 45%;
+    height: auto;
+    display: table-cell;
+    vertical-align: bottom;
+
+    &--writing {
+
+    }
+
+    &--middle {
+      vertical-align: middle;
+      padding-left: 10rem;
+    }
+
+    &--writing {
+      width: 55%;
+      vertical-align: top;
+      padding-top: 100px;
+      padding-left: 1rem;
+    }
+
+    &--heading {
+      line-height: 0;
+      padding: 1.7rem 0;
+    }
+
+    &--right {
+      padding: 6rem;
+      vertical-align: middle;
+      text-align: right;
+    }
+
+    &--40 {
+      padding: 100px 100px 100px 0px;
+    }
+
+    &--red-square {
+      max-width: 90%;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    &--grey-square {
+      max-width: 90%;
+      text-align: center;
+      vertical-align: bottom;
+    }
+
+    &--map {
+
+      height: 400px;
+      width: 100%;
+    }
+
+  }
+} // END OF WRAPPER
+
+
+.link__ayup-email {
 
     text-decoration: underline;
 
-  }
+}
 
 // GOOGLE map styling
 
-  #js-googleMap {
+#js-googleMap {
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-  }
-
-
-
-
-
-/* NO LONGER REQUIRE PHOTO MAP
-
-  .ayup-map {
-
-  display: inline-block;
-  vertical-align: bottom;
-
-  @media screen and (max-width: 1320px) {
-  width: 100% !important;
-  }
-
-} */
+}
